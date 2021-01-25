@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="wp-docs">
+    <!-- main content-->
+    <div class="wp-docs-wrapper">
+      <!-- sidebar -->
+      <div class="wp-docs-sidebar">
+        <header class="wp-docs-sidebar-title">
+          <img src="images/logo.svg" alt="Workpath API" width="140px" />
+        </header>
+        <ul>
+          <li><div class="wp-icon a"></div><a href="#GetStarted">Getting Started</a></li>
+          <li><div class="wp-icon b"></div><a href="#SubmitRequest">Submitting your request</a></li>
+          <li><div class="wp-icon c"></div><a href="#ConfirmDetails">Confirming details</a></li>
+          <li><div class="wp-icon d"></div><a href="#Scheduling">Scheduling</a></li>
+          <li><div class="wp-icon e"></div><a href="#Logistics">Logistics</a></li>
+          <li><div class="wp-icon f"></div><a href="#CompleteAppointment">Completing the Appointment</a></li>
+          <li><div class="wp-icon g"></div><a href="#ToTheLab">To the Lab</a></li>
+          <li><div class="wp-icon h"></div><a href="#Results">Results</a></li>
+        </ul>
+      </div>
+      <!-- /sidebar -->
+
+      <!-- content -->
+      <div class="wp-docs-content">
+        <header class="wp-docs-page-title">
+          <h1>Workpath Housecall API</h1>
+          <h3 class="thin secondary">The path connecting telehealth and in-home healthcare.</h3>
+        </header>
+
+        <header class="wp-docs-content-tab">
+          <span class="count" id="GetStarted">1</span> Getting Started
+          <div class="anchor">
+            <img src="images/icon-link.png">
+          </div>
+        </header>
+        <article>
+          <p>
+                Workpath is your touchpoint to invaluable information for your
+                patients. Workpath
+              </p>
+              <ul>
+                <li>
+                  Takes your request and turns it into an in-home patient
+                  appointment.
+                </li>
+                <li>
+                  Sends a specialist to your patient’s home to collect the
+                  specimen you requested who then delivers the specimen to the
+                  lab.
+                </li>
+                <li>Delivers the lab results straight back to you.</li>
+              </ul>
+              <p>
+                At every step of the experience, we keep in contact with you,
+                your patient, and the lab to ensure everyone has the right
+                information at the right time.
+              </p>
+              <p>
+                Before we can get started, reach out to us to make sure you have
+                your lab account setup with Workpath as a lab partner for
+                sending orders and receiving results.
+              </p>
+              <p>
+                Read on to see what you can expect from us as well as a little
+                bit about what the patient experience will be like.
+              </p>
+        </article>
+
+        <header class="wp-docs-content-tab">
+          <span class="count" id="SubmitRequest">2</span> Submitting your request
+          <div class="anchor">
+            <img src="images/icon-link.png">
+          </div>
+        </header>
+        <article>
+          <p>
+                When Workpath receives a request from you, it looks for three
+                groups of information:
+              </p>
+              <ol>
+                <li>
+                  Your Company Information: Your ID, account number for your lab
+                  partner, name/NPI of the Provider requesting the test, the
+                  unique identifier you use for your patient who needs the test.
+                </li>
+                <li>
+                  Your Patient’s Information*: First/Last Name, Phone #, DOB,
+                  Email, Address, and Gender.
+                </li>
+                <li>
+                  What Test You Are Requesting: an ID, ICD codes that were
+                  assigned, and any documents or notes you need the field
+                  specialists to have.
+                </li>
+              </ol>
+              <p>
+                *The next step below will confirm this information directly with
+                your patient so if you are unsure of some of the fields or their
+                accuracy, do not worry, we will grab that for you! We require an
+                accurate phone number for logistics updates.
+              </p>
+        </article>
+
+        <header class="wp-docs-content-tab">
+          <span class="count" id="ConfirmDetails">3</span> Confirming details
+          <div class="anchor">
+            <img src="images/icon-link.png">
+          </div>
+        </header>
+        <article>
+          <p>
+              In your request, we asked you to provide as much information on
+              your patient as possible. Here’s what happens next:
+            </p>
+            <ul>
+              <li>
+                We contact the patient to fill in any missing contact info.
+              </li>
+              <li>
+                We ask the patient for self-payment or insurance information
+                which is then sent to the lab for billing purposes (Policy
+                Number, Group Number, etc.).
+              </li>
+              <li>
+                We ask the patient what day works best for their appointment and
+                recommended times based on the availability of our specialists
+                in the area.
+              </li>
+            </ul>
+            <p>
+              Workpath also makes sure to inform the patient about any needs
+              from the test they will be taking (ex. If they need to fast).
+            </p>
+        </article>
+
+        <header class="wp-docs-content-tab">
+          <span class="count" id="Scheduling">4</span> Scheduling
+          <div class="anchor">
+            <img src="images/icon-link.png">
+          </div>
+        </header>
+        <article>
+          <p>
+              Once we’ve received all of the required information from the
+              patient, we’ll order the test for the patient from our lab partner
+              and schedule the appointment for the patient’s in-home visit.
+            </p>
+            <p>
+              First, we’ll look for the next available time for a specialist who
+              is certified to complete the test, has availability in that area,
+              and who can tackle the appointment the soonest.
+            </p>
+            <p>
+              Once a specialist claims the appointment and confirms that they
+              can complete the specific test for that patient at that location,
+              the patient will receive a text message confirming the date and
+              time of their appointment, and information on their specialist.
+            </p>
+            <p>
+              In addition to the patient receiving a confirmation, you will
+              receive a response including the created appointment’s ID,
+              information on the specialist, the status of the appointment, and
+              other information on what to expect from the appointment.
+            </p>
+            <p>
+              If there are unforeseen circumstances including bad weather,
+              illness, or supply issues and the specialist has to reschedule or
+              release the appointment to another specialist, both you and the
+              patient will be updated immediately.
+            </p>
+        </article>
+
+        <header class="wp-docs-content-tab">
+          <span class="count" id="Logistics">5</span> Logistics
+          <div class="anchor">
+            <img src="images/icon-link.png">
+          </div>
+        </header>
+        <article>
+          <div class="columns">
+            <div class="column">
+              <p>
+                You and your patient are sent messages as it gets closer to
+                appointment time. Your patient is sent reminders and you are
+                sent confirmations that the specialist has all necessary
+                equipment and are ready for the appointment.
+              </p>
+              <p>
+                On the day of, your patient will receive an SMS message letting
+                them know their specialist is on the way that includes a link*
+                to help track their specialist en route to their home. We’ll
+                also include links* for any support calls or questions for the
+                patient.
+              </p>
+              <p>
+                When the specialist has arrived, the patient will receive an SMS
+                message notifying them. The specialist will introduce
+                themselves, confirm the patient’s information, and start the
+                appointment.
+              </p>
+              <p>
+                *The tracking experience and support lines will reflect your
+                brand, the touchpoint they’re familiar with.
+              </p>
+            </div>
+            <div class="column">
+              Image: text and UI
+            </div>
+          </div>
+        </article>
+
+        <header class="wp-docs-content-tab">
+          <span class="count" id="CompleteAppointment">6</span> Completing the Appointment
+          <div class="anchor">
+            <img src="images/icon-link.png">
+          </div>
+        </header>
+        <article>
+          <div class="columns">
+            <div class="column">
+              <p>
+                Workpath provides a mobile app to the specialists that
+                highlights the steps they need to take to complete the
+                appointment - such as information that they may need to gather
+                from the patient. These steps are pre-determined based on the
+                test that you requested.
+              </p>
+              <p>
+                During the in-home visit, the specialist will ask your patient
+                to complete a few forms for the lab to confirm their
+                information, self-payment or insurance eligibility, and the test
+                being performed. These will be delivered to the lab along with
+                any specimens taken.
+              </p>
+              <p>
+                Once the specialist has finished all of the steps with your
+                patient, they will mark the appointment as complete, sending a
+                text message to your patient and an update to your system.
+              </p>
+            </div>
+            <div class="column">
+              <img src="./images/CompletingtheAppt.png" width="400px" />
+            </div>
+          </div>
+        </article>
+
+        <header class="wp-docs-content-tab">
+          <span class="count" id="ToTheLab">7</span> To the lab
+          <div class="anchor">
+            <img src="images/icon-link.png">
+          </div>
+        </header>
+        <article>
+          <div class="columns">
+            <div class="column">
+              <p>
+                After the specialist marks the appointment as complete, the
+                mobile app prompts them to either ship the specimen to the lab
+                or deliver it to a nearby location. This is part of the
+                predetermined steps mentioned earlier.
+              </p>
+              <p>
+                You are notified once the specimen and patient forms are either
+                shipped or dropped off.
+              </p>
+            </div>
+            <div class="column">
+              <img src="./images/TakingtheSpecimentotheLab.png" width="400px" />
+            </div>
+          </div>
+        </article>
+
+        <header class="wp-docs-content-tab">
+          <span class="count" id="Results">8</span> Results
+          <div class="anchor">
+            <img src="images/icon-link.png">
+          </div>
+        </header>
+        <article>
+          <p>
+            Once the lab receives the specimen and patient forms, they
+            perform the requested tests and then send us the results file.
+            What Workpath does for you here is take the large, difficult to
+            parse HL7 file returned by the lab and only sends you the PDF
+            overview that is included.
+          </p>
+          <img src="./images/ResultsPDFExample.png" alt="Results PDF example" />
+          <p>
+            From that point, you can work with your patient on what’s next,
+            and we’ll be ready for your next in-home appointment only one
+            API response away.
+          </p>
+        </article>
+      </div>
+      <!-- /content -->
+    </div>
+  </body>
+</html>
